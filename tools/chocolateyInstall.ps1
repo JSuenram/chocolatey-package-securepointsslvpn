@@ -14,12 +14,12 @@ try {
 $packageArgs = @{
   packageName            = 'securepointsslvpn'
   fileType               = 'msi'
-  file                   = "$toolsDir\openvpn-client-installer-2.0.36.msi"
-  file64                 = "$toolsDir\openvpn-client-installer-2.0.36.msi"
-  checksum               = '3BAD2C2F06D1E449D5F1A6E9F9F097ACE5E032F1F7DA2B996503929F9E3D1CEE343AEFE96CB29AC3F87639A53CC38812CC648429EFC18356731C5250A1D2ACBA'
-  checksum64             = '3BAD2C2F06D1E449D5F1A6E9F9F097ACE5E032F1F7DA2B996503929F9E3D1CEE343AEFE96CB29AC3F87639A53CC38812CC648429EFC18356731C5250A1D2ACBA'
-  checksumType           = 'sha256'
-  checksumType64         = 'sha256'
+  file                   = "$toolsDir\openvpn-client-installer-2.0.40.msi"
+  file64                 = "$toolsDir\openvpn-client-installer-2.0.40.msi"
+  checksum               = 'afb44dd9d21ab904a0c0c08a83e975c76d94541eccced19b9f5ee87a1dd0705514719054ef749a8eb42190f1588dc3871309447afa70398ecc96d22489f42616'
+  checksum64             = 'afb44dd9d21ab904a0c0c08a83e975c76d94541eccced19b9f5ee87a1dd0705514719054ef749a8eb42190f1588dc3871309447afa70398ecc96d22489f42616'
+  checksumType           = 'sha512'
+  checksumType64         = 'sha512'
   silentArgs             = "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`" TRANSFORMS=`":en-us.mst`""
   validExitCodes         = @(0, 3010, 1641)
   softwareName           = 'securepoint*ssl*vpn*'
